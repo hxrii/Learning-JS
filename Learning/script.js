@@ -70,4 +70,32 @@ for(let i=0;i<10;i++){
     console.log(i);
 }
 
+//using loops to iterate
+
+for(let todo of todos){
+    console.log(todo.id);
+
+}
+
+//using forEach, map and filter
+
+todos.forEach(function(todo){
+    console.log(todo.id);
+});
+
+
+const todoText = todos.map(function(todo){
+    return(todo.work);
+});
+console.log(todoText);
+
+const todoComp = todos.filter(function(todo){
+    return todo.complete===true;
+}).map(function(todoComp){
+    return todoComp.work;
+});
+
+console.log(todoComp);
+
+
 
