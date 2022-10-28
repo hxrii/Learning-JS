@@ -98,6 +98,11 @@ const todoComp = todos.filter(function(todo){
 console.log(todoComp);
 
 
+//Arrow functions
 
+const x = (num1=1,num2=2) => num1+num2;
+
+console.log(x(5,10));
+todos.forEach((todo)=>console.log(todo.id));
 
 
