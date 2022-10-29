@@ -106,3 +106,43 @@ console.log(x(5,10));
 todos.forEach((todo)=>console.log(todo.id));
 
 
+//Constructor
+// function Person (fname,lname,dob){
+//     this.fname=fname;
+//     this.lname=lname;
+//     this.dob=new Date(dob);
+//     this.getFullName = function(){
+//         return `${this.fname} ${this.lname}`;
+//     }
+// }
+
+//ClASS
+class Person{
+    constructor(fname,lname,dob){
+        this.fname=fname;
+        this.lname=lname;
+        this.dob=new Date(dob);  
+    }
+
+        getFullName = function(){
+        return `${this.fname} ${this.lname}`;
+    }
+
+
+}
+
+
+
+
+//INSTANTIATE
+const Person1 = new Person("Hari","Kan","7-6-2001");
+console.log(Person1)
+console.log(Person1.getFullName());
+
+
+
+//DOM
+
+
+
+
